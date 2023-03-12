@@ -1,2 +1,3 @@
 # info-617-analysis
-Basic analysis script to grab movie script and perform sentiment analysis and grab key phrases
+
+Basic analysis script to grab movie script and perform sentiment analysis and grab key phrases and export findings to CSV
