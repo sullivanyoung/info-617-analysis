@@ -4,6 +4,6 @@ basic script to parse any movie script from: https://imsdb.com/
 
 performs sentiment analysis and grabs key phrases
 
-will export findings to CSV
+will export findings to excel sheet
 
 for INFO 617 at VCU
