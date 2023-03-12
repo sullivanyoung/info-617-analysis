@@ -1,3 +1,7 @@
 # info-617-analysis
 
-Basic analysis script to grab movie script and perform sentiment analysis and grab key phrases and export findings to CSV
+basic script to parse any movie script from https://imsdb.com/scripts 
+
+performs sentiment analysis and grabs key phrases
+
+will export findings to CSV
