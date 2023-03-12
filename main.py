@@ -27,7 +27,7 @@ findings = {
     "Key Phrases": list(script_blob.noun_phrases),
 }
 
-# export to CSV
+# export to excel
 with pd.ExcelWriter('analysis.xlsx') as writer:
     pd.DataFrame.from_dict(findings["Sentiment"], orient='index').to_excel(writer, sheet_name='Sentiment')
     pd.DataFrame({'Key Phrases': findings["Key Phrases"]}).to_excel(writer, sheet_name='Key Phrases', index=False)
