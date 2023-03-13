@@ -19,6 +19,13 @@ script_text = html.decode()[start+len(start_tag):end].strip()
 script_blob = TextBlob(script_text)
 
 # create a dictionary of findings to export to CSV
+
+# polarity is a float which lies between [-1, 1] where 1 means positive and -1 means negative
+# subjectivity is a float which lies between [0, 1] where it says if sentences generally refer to personal opinion, emotion, or judgment where objectivity refers to factual information
+# key phrases extracts all the nouns from phrases and helps us analyze the "who". Not always accurate but good secondary source
+
+# for more info check out: https://www.analyticsvidhya.com/blog/2018/02/natural-language-processing-for-beginners-using-textblob/#:~:text=3.6%20Sentiment%20Analysis&text=Polarity%20is%20float%20which%20lies,objective%20refers%20to%20factual%20information.
+
 findings = {
     "Sentiment": {
         "Polarity": script_blob.sentiment.polarity,
